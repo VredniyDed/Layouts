@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  background-image: linear-gradient(rgba(74, 68, 68, 0.7), rgba(0, 0, 0, 0.7)),
+    url("images/landscape.jpg");
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  padding: 0 8%;
+  box-sizing: border-box;
+}
+
+.navbar {
+  height: 12%;
+  display: flex;
+  align-items: center;
+  padding-bottom: 10%;
+}
+
+.icon {
+  cursor: pointer;
+  width: 30px;
+}
+
+.menu-bar {
+  cursor: pointer;
+  width: 20px;
+  margin-left: 25px;
+}
+
+nav {
+  flex: 1;
+  text-align: right;
+}
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 25px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: rgb(219, 243, 243);
+  font-size: 15px;
+}
+
+.row {
+  display: flex;
+  height: 88%;
+  align-items: center;
+}
+
+.col {
+  flex-basis: 50%;
+}
+
+h1 {
+  color: #fff;
+  font-size: 85px;
+  font-family: "Aboreto", cursive;
+}
+
+p {
+  color: #fff;
+  font-size: 11px;
+  font-weight: 800;
+  line-height: 15px;
+}
+.card p {
+  text-shadow: 0 0 5px white;
+  font-size: 12px;
+  text-align: center;
+}
+
+h5 {
+  color: black;
+  color: #fff;
+  text-shadow: 0 0 5px #999;
+}
+
+button {
+  width: 180px;
+  color: #000;
+  font-size: 12px;
+  padding: 10px;
+  margin-top: 30px;
+  background: #fff;
+  border: 0;
+  border-radius: 20px;
+  outline: 0;
+}
+
+.card {
+  height: 230px;
+  display: inline-flex;
+  border-radius: 10px;
+  padding: 15px 25px;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 10px 15px;
+  background-position: center;
+  background-size: cover;
+  transition: transform 0.5s;
+  flex-wrap: wrap;
+  width: 15vw;
+}
+
+.card1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcTHj52cchhKsFPjZnmz-WcnlkTwPhze0mczyvvfnIzNPgrXeC9cJzhmILDm0Q&s=19);
+}
+
+.card2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcTUoW7NCAwm_at-SJ-6AEg5H2UU4ARV6Lhe5BC6P7Kvq2iJdGwm2jIq34FZGw&s=19);
+}
+
+.card3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcTTcnuNpTL8OTOpFvPazWaxmqP4XhLWawbN1o6_wa50P46NURFR2ECfxJqV&s=19);
+}
+
+.card4 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcQ7MfvKyeAZsIQvdNZEz1WYVPdbuz3CoToILQLXsmfcuX79dODx7HvaLyr8-A&s=19);
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.7));
+}
+
+.blok-card {
+  padding-left: 10%;
+  justify-self: center;
+}
+
+@media (max-width: 1100px) {
+  .row {
+    display: block;
+  }
+  .blok-card {
+    padding-left: 0;
+  }
+  .card p {
+    font-size: 8px;
+    height: 10vh;
+  }
+  h5 {
+    size: 5vw;
+  }
+}
+
+@media (max-width: 1100px) {
+  .row {
+    display: block;
+  }
+  .blok-card {
+    padding-left: 0;
+    margin-top: 5vh;
+  }
+  .card p {
+    font-size: 8px;
+    height: 10vh;
+  }
+}
